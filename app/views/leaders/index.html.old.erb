@@ -47,6 +47,7 @@
             <h5 class="pull-right">
                 Player statistics will update every 12 hours.  Last updated at:
                 <strong>
+                    <%= @pool.last_update.in_time_zone("Eastern Time (US & Canada)").strftime("%m/%d/%Y %I:%M %p") %>
                 </strong>
             </h5>
           </div>
